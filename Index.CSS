@@ -423,4 +423,130 @@ a{text-decoration:none;color:#0f172a;}
   .logo-card-container {
     order: -1; /* El logo sale arriba en móvil */
   }
+
+}
+
+/* ============================= */
+/* RESPONSIVE GLOBAL MEJORADO */
+/* ============================= */
+
+/* Tablets */
+@media (max-width: 1024px){
+
+.nav{
+flex-wrap:wrap;
+gap:10px;
+}
+
+.hero-content-pro{
+left:5%;
+max-width:500px;
+}
+
+.hero-content-pro h1{
+font-size:36px;
+}
+
+.container{
+padding:0 25px;
+}
+
+}
+
+/* Celulares */
+@media (max-width: 768px){
+
+.topbar .nav{
+flex-direction:column;
+gap:10px;
+}
+
+.nav a{
+margin-left:0;
+}
+
+.logo{
+height:40px;
+}
+
+.hero{
+height:auto;
+min-height:90vh;
+}
+
+.hero-content-pro{
+position:relative;
+left:auto;
+top:auto;
+transform:none;
+padding:40px 20px;
+max-width:100%;
+}
+
+.hero-overlay{
+background:rgba(15,23,42,0.75);
+}
+
+.hero-content-pro h1{
+font-size:28px;
+}
+
+.hero-content-pro p{
+font-size:16px;
+}
+
+.hero-actions{
+justify-content:center;
+}
+
+.grid-2{
+grid-template-columns:1fr;
+}
+
+.footer-links{
+flex-direction:column;
+gap:25px;
+}
+
+.footer-logo{
+text-align:center;
+}
+
+.footer-socials{
+display:flex;
+justify-content:center;
+}
+
+}
+
+/* Celulares pequeños */
+@media (max-width:480px){
+
+.hero-content-pro h1{
+font-size:24px;
+}
+
+.hero-content-pro p{
+font-size:14px;
+}
+
+.btn,
+.btn-primary,
+.btn-secondary{
+padding:10px 16px;
+font-size:14px;
+}
+
+.logos{
+gap:20px;
+}
+
+.logos img{
+max-width:80px;
+}
+
+.pais-nombre{
+font-size:12px;
+}
+
 }
